@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.characterSheet{
+    border: 1px solid white;
+    width: 40%;
+}
+
+.stat{
+    border-top: 1px solid white;
+}
