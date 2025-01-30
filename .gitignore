@@ -44,3 +44,5 @@ node_modules/
 #*.ogg
 
 test.js
+test.html
+test.css
