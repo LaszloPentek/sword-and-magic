@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 html{
@@ -9,6 +10,30 @@ html{
     color: whitesmoke;
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
+p, strong, li{
+    font-size: 1.8rem;
+}
+
+main{
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-size: 1.8rem;
+}
+
+label{
+    font-size: 1.8rem;
+}
 
 .characterSheet{
     border: 1px solid white;
@@ -17,4 +42,56 @@ html{
 
 .stat{
     border-top: 1px solid white;
+}
+
+
+.story{
+    border: 1px solid white;
+    display: flex;
+}
+
+
+/* Csúszka alapbeállítások */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+    pointer-events: none; /* Interakció tiltása */
+}
+
+/* HP csúszka színezés */
+input#hp {
+    background: linear-gradient(to right, red 0%, red 70%, #ddd 70%, #ddd 100%);
+}
+
+/* Mana csúszka színezés */
+input#mana {
+    background: linear-gradient(to right, blue 0%, blue 40%, #ddd 40%, #ddd 100%);
+}
+
+/* Thumb eltüntetése */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
 }
