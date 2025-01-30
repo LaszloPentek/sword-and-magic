@@ -10,11 +10,12 @@
     <header>
         <nav>
             <h1>ÜDV</h1>
+            <a href="./test.html">test</a>
         </nav>
     </header>
     <main>
         <div class="story">
-            <img src="./assets/image/market-place.jpg" alt="">
+            <!--<img src="./assets/image/market-place.jpg" alt="">  -->
             <!--<div>
                 <h2>Lorem ipsum dolor sit.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat?</p>
@@ -47,49 +48,70 @@
                 </div>
                 
                 <div class="lehetoseg">
-                    <form action="">
-                        <label for="">
-                            <input type="radio" name="" id="">
+                    <form>
+                        <label for="fegyverkovacs">
+                            <input type="radio" name="valasztas" id="fegyverkovacs">
                             Megnézem a fegyverkovács portékáit
                         </label>
-                        <label for="">
-                            <input type="radio" name="" id="">
+                        <label for="varazsital">
+                            <input type="radio" name="valasztas" id="varazsital">
                             Közelebbről szemügyre veszem a varázsitalokat
                         </label>
-                        <label for="">
-                            <input type="radio" name="" id="">
+                        <label for="zeneszek">
+                            <input type="radio" name="valasztas" id="zeneszek">
                             Meghallgatom a zenészek játékát
                         </label>
                     </form>
-
-                    
                 </div>
-                <div class="characterSheet">
-                    <h2>Tav</h2>
-                    <h3>Harcos</h3>
-                    <div class="stats">
-                        <div class="stat hp">
-                            <label for="hp">HP</label>
-                            <input type="range" id="hp" min="0" max="100" value="80">
-                        </div>
-                        <div class="stat mana">
-                            <label for="mana">Mana</label>
-                            <input type="range" id="mana" min="0" max="100" value="50">
-                        </div>
-                    </div>
-                    <div class="stat">
-                        <p>Erő 15</p>
-                        <p>Ügyeség 15</p>
-                        <p>Álloképeség 15</p>
-                        <p>Inteligenci 8</p>
-                        <p>Bölcseség 12</p>
-                        <p>Karizma 10</p>
-                    </div>
-                </div>
-
+                
             </div>
             </div>
         </div>
+        <div class="characterSheet">
+            <h2>Tav</h2>
+            <h3>Harcos</h3>
+        
+            <div class="stats">
+                <div class="stat hp">
+                    <label for="hp">HP</label>
+                    <input type="range" id="hp" min="0" max="100" value="80">
+                    <span class="value">80</span>
+                </div>
+                <div class="stat mana">
+                    <label for="mana">Mana</label>
+                    <input type="range" id="mana" min="0" max="100" value="50">
+                    <span class="value">50</span>
+                </div>
+            </div>
+        
+            <div class="attributes">
+                <p><strong>Erő:</strong> 15</p>
+                <p><strong>Ügyesség:</strong> 15</p>
+                <p><strong>Állóképesség:</strong> 15</p>
+                <p><strong>Intelligencia:</strong> 8</p>
+                <p><strong>Bölcsesség:</strong> 12</p>
+                <p><strong>Karizma:</strong> 10</p>
+            </div>
+        
+            <div class="gear">
+                <h4>Felszerelés</h4>
+                <ul>
+                    <li><strong>Fej:</strong> Sisak</li>
+                    <li><strong>Páncél:</strong> Bőr páncél</li>
+                    <li><strong>Jobb kéz:</strong> Egykezes szabja</li>
+                    <li><strong>Bal kéz:</strong> Pajzs</li>
+                </ul>
+            </div>
+        
+            <div class="consumables">
+                <h4>Fogyóeszközök</h4>
+                <ul>
+                    <li>Gyógyital x2</li>
+                    <li>Mana ital x1</li>
+                </ul>
+            </div>
+        </div>
+        
         
     </main>
     <footer>
