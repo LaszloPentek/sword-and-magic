@@ -35,6 +35,9 @@ label{
     font-size: 1.8rem;
 }
 
+
+
+
 .characterSheet{
     border: 1px solid white;
     width: 40%;
@@ -50,6 +53,20 @@ label{
     display: flex;
 }
 
+.story div h2{
+    color: whitesmoke;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.story div p{
+    color: red;
+    margin: 1.5rem 4rem;
+}
+
+.lehetoseg form{
+ color: aqua;
+}
 
 /* Csúszka alapbeállítások */
 input[type="range"] {
