@@ -35,7 +35,9 @@ label{
     font-size: 1.8rem;
 }
 
-
+li{
+    list-style: none;
+}
 
 
 .characterSheet{
@@ -45,8 +47,22 @@ label{
 
 .stat{
     border-top: 1px solid white;
+    border-bottom: 1px solid wheat;
+    padding: 1rem;
 }
 
+.attributes{
+    border-bottom: 1px solid white;
+    padding: 2rem 1rem;
+}
+
+.gear{
+    padding: 2rem 1rem;
+}
+
+.consumables{
+    padding: 2rem 1rem;
+}
 
 .story{
     border: 1px solid white;
@@ -65,8 +81,11 @@ label{
 }
 
 .lehetoseg form{
- color: aqua;
+    color: aqua;
+    padding: 2rem;
 }
+
+
 
 /* Csúszka alapbeállítások */
 input[type="range"] {
