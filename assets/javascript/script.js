@@ -6,24 +6,15 @@ let name = prompt("Kérlek add meg a karaktered nevét");
 characterName.innerHTML= `${name}`;
 
 
-let choiceClass = prompt("Harcos, Mágus vagy Tolvaj szeretnél lenni?");
-characterClass.innerHTML = `${choiceClass}`
-while (characterClass =  true){
-    
+let choiceClass;
 
-    if(choiceClass === "Harcos"){
-        characterClass.innerHTML = `${choiceClass}`
-        break;
-    }else if(choiceClass === "Mágus"){
-        characterClass.innerHTML = `${choiceClass}`
-        break;
-    }else if(choiceClass === "Tolvaj"){
-        characterClass.innerHTML = `${choiceClass}`
-        break;
-    }else{
-        choiceClass = prompt(`Sajna a(z) ${choiceClass} nem választható osztály :(! \nProbáld meg újra! \nHarcos, Mágus vagy Tolvaj szeretnél lenni?`);
-    }
-}
+// Addig kérdezzük újra, amíg a felhasználó nem választ érvényes osztályt
+do {
+    choiceClass = prompt("Harcos, Mágus vagy Tolvaj szeretnél lenni?");
+} while (choiceClass !== "Harcos" && choiceClass !== "Mágus" && choiceClass !== "Tolvaj");
+
+// Beállítjuk az osztályt a HTML-ben
+characterClass.innerHTML = choiceClass;
 
 
 
