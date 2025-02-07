@@ -76,15 +76,17 @@ li{
 }
 
 .story div p{
-    color: red;
     margin: 1.5rem 4rem;
 }
 
 .lehetoseg form{
-    color: aqua;
     padding: 2rem;
 }
 
+.lehetoseg form label:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
 
 
 /* Csúszka alapbeállítások */
