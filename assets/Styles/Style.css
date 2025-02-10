@@ -84,8 +84,18 @@ li{
 }
 
 .lehetoseg form label:hover{
-    color: blueviolet;
+    color: goldenrod;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Ha a radio input be van jelölve, színezd át a hozzá tartozó label-t */
+.lehetoseg form input[type="radio"]:checked + label {
+    color: blueviolet;
+}
+
+.lehetoseg form input[type="radio"] {
+    display: none;
 }
 
 
