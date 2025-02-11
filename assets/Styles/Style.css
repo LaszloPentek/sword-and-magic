@@ -14,6 +14,14 @@ h2{
     font-size: 2.5rem;
 }
 
+h3{
+    font-size: 2.2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
 p, strong, li{
     font-size: 1.8rem;
 }
@@ -80,7 +88,7 @@ li{
 }
 
 .lehetoseg form{
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 
 .lehetoseg form label:hover{
@@ -142,4 +150,16 @@ input[type="range"]::-ms-thumb {
     height: 0;
     background: transparent;
     cursor: default;
+}
+
+.poti{
+    cursor: pointer;
+}
+
+.hp-poti:hover{
+    color: red;
+}
+
+.mana-poti:hover{
+    color: blue;
 }
