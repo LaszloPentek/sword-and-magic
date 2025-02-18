@@ -47,6 +47,14 @@ li{
     list-style: none;
 }
 
+.btn{
+   color: #ddd;
+   background-color: grey;
+   width: 10rem;
+   height: 2.5rem;
+   cursor: pointer;
+   margin: 2rem 0;
+}
 
 .characterSheet{
     border: 1px solid white;

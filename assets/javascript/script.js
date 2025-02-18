@@ -2,16 +2,17 @@ let characterName = document.querySelector('.character-name-js');
 let characterClass = document.querySelector('.character-class-js')
 
 
-let name = prompt("Kérlek add meg a karaktered nevét");
+//let name = prompt("Kérlek add meg a karaktered nevét");
 characterName.innerHTML= `${name}`;
 
 
 let choiceClass;
 
 // Addig kérdezzük újra, amíg a felhasználó nem választ érvényes osztályt
-do {
-    choiceClass = prompt("Harcos, Mágus vagy Tolvaj szeretnél lenni?");
-} while (choiceClass !== "Harcos" && choiceClass !== "Mágus" && choiceClass !== "Tolvaj");
+
+//do {
+//    choiceClass = prompt("Harcos, Mágus vagy Tolvaj szeretnél lenni?");
+//} while (choiceClass !== "Harcos" && choiceClass !== "Mágus" && choiceClass !== "Tolvaj");
 
 // Beállítjuk az osztályt a HTML-ben
 characterClass.innerHTML = choiceClass;
