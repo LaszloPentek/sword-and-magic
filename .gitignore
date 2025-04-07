@@ -46,3 +46,7 @@ node_modules/
 test.js
 test.html
 test.css
+
+
+.env
+node_modules/
