@@ -3,76 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/Styles/dice.css">
     <link rel="stylesheet" href="./assets/Styles/Style.css">
     <title>Sword and Magic</title>
 </head>
 <body>
-    <header>
-        <!--
-        
-        <nav>
-            <h1>ÜDV</h1>
-            <a href="./test.html">test</a>
-        </nav>
-        -->
-    </header>
+    <header></header>
     <main>
         <div class="story">
-            <!--<img src="./assets/image/market-place.jpg" alt="">  -->
-            <!--<div>
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quaerat?</p>
-                <p>Culpa, temporibus omnis officiis eaque rerum quia dicta cum inventore.</p>
-                <p>In et explicabo quam. Eveniet, quia! Ea ipsa exercitationem excepturi!</p>
-                <p>Cupiditate tenetur odio voluptates nobis fugit beatae minus repudiandae maiores!</p>
-                <p>Minima voluptas maxime id odit nemo assumenda laboriosam. Quaerat, voluptatibus!</p>
+            <div id="parchment"></div>
+            <div class="">
+                <h2>A piactér nyüzsgése</h2>
+                <p>A középkori piac tele van élettel: árusok kínálják portékáikat, vásárlók alkudoznak, és a háttérben zenészek játszanak. Az illatok keveréke betölti az orrodat, miközben mindenhol érdekes dolgokat látsz.</p>
+                <p>Ahogy körülnézel, három lehetőség tárul eléd:</p>
             </div>
-
             <div class="lehetoseg">
-                <form action="">
-                    <label for="">
-                        <input type="radio" name="" id="">
-                        Jobbra fordulok
-                    </label>
-                    <label for="">
-                        <input type="radio" name="" id="">
-                        Ballra fordulok
-                    </label>
-                    <label for="">
-                        <input type="radio" name="" id="">
-                        Megyek tovább egyenesen
-                    </label>
-                </form> -->
-                <div>
-                <div>
-                    <h2>A piactér nyüzsgése</h2>
-                    <p>A középkori piac tele van élettel: árusok kínálják portékáikat, vásárlók alkudoznak, és a háttérben zenészek játszanak. Az illatok keveréke betölti az orrodat, miközben mindenhol érdekes dolgokat látsz.</p>
-                    <p>Ahogy körülnézel, három lehetőség tárul eléd:</p>
-                </div>
-                
-                <div class="lehetoseg">
-                    <form>
-                        <input type="radio" name="valasztas" id="fegyverkovacs">
-                        <label for="fegyverkovacs">Megnézem a fegyverkovács portékáit</label>
-                
-                        <input type="radio" name="valasztas" id="varazsital">
-                        <label for="varazsital">Közelebbről szemügyre veszem a varázsitalokat</label>
-                
-                        <input type="radio" name="valasztas" id="zeneszek">
-                        <label for="zeneszek">Meghallgatom a zenészek játékát</label>
+                <form>
+                    <input type="radio" name="valasztas" id="fegyverkovacs">
+                    <label for="fegyverkovacs">Megnézem a fegyverkovács portékáit</label>
 
-                        <input type="submit" value="küldés" class="btn">
-                    </form>
-                </div>
-                
-                
+                    <input type="radio" name="valasztas" id="varazsital">
+                    <label for="varazsital">Közelebbről szemügyre veszem a varázsitalokat</label>
+
+                    <input type="radio" name="valasztas" id="zeneszek">
+                    <label for="zeneszek">Meghallgatom a zenészek játékát</label>
+
+                    <input type="submit" value="küldés" class="btn">
+                </form>
             </div>
+
+            <div class="kocka">
+                <div class="content">
+                <div class="die">
+                  <figure class="face face-1"></figure>
+                  <figure class="face face-2"></figure>
+                  <figure class="face face-3"></figure>
+                  <figure class="face face-4"></figure>
+                  <figure class="face face-5"></figure>
+                  <figure class="face face-6"></figure>
+                  <figure class="face face-7"></figure>
+                  <figure class="face face-8"></figure>
+                  <figure class="face face-9"></figure>
+                  <figure class="face face-10"></figure>
+                  <figure class="face face-11"></figure>
+                  <figure class="face face-12"></figure>
+                  <figure class="face face-13"></figure>
+                  <figure class="face face-14"></figure>
+                  <figure class="face face-15"></figure>
+                  <figure class="face face-16"></figure>
+                  <figure class="face face-17"></figure>
+                  <figure class="face face-18"></figure>
+                  <figure class="face face-19"></figure>
+                  <figure class="face face-20"></figure>
+                </div>
+                </div>
+                <a href="" class="randomize">Roll!</a>
             </div>
         </div>
         <div class="characterSheet">
             <h2 class="character-name-js">Tav</h2>
-            <h3 class="character-class-js"> Harcos</h3>
-        
+            <h3 class="character-class-js">Harcos</h3>
             <div class="stats">
                 <div class="stat hp">
                     <label for="hp">HP</label>
@@ -112,9 +102,7 @@
                     <li class="mana-poti">Mana ital x1</li>
                 </ul>
             </div>
-        </div>
-        
-        
+        </div>  
     </main>
     <footer>
         
@@ -122,3 +110,6 @@
     <script src="./assets/javascript/script.js"></script>
 </body>
 </html>
+
+
+            

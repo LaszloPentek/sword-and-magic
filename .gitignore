@@ -50,3 +50,4 @@ test.css
 
 .env
 node_modules/
+.env.example

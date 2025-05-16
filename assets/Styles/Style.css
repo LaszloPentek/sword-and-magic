@@ -1,3 +1,4 @@
+/* --- Style.css --- */
 * {
     margin: 0;
     padding: 0;
@@ -5,117 +6,85 @@
     font-size: 16px;
 }
 
-html{
+html {
     background-color: black;
     color: whitesmoke;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
 }
 
-h3{
+h3 {
     font-size: 2.2rem;
 }
 
-h4{
+h4 {
     font-size: 1.5rem;
 }
 
-p, strong, li{
+p, strong, li {
     font-size: 1.8rem;
 }
 
-main{
-    display: flex;
+.content{
+    width: 30%;
+    height: 350px;
+    border: 2px solid red;
 }
 
-form{
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
-input{
-    font-size: 1.8rem;
+input[type="radio"] {
+    display: none;
 }
 
-label{
-    font-size: 1.8rem;
+input[type="radio"] + label::before {
+    content: "\25CB";
+    margin-right: 0.5rem;
+    color: goldenrod;
 }
 
-li{
-    list-style: none;
+input[type="radio"]:checked + label::before {
+    content: "\25C9";
+    color: blueviolet;
 }
 
-.btn{
-   color: #ddd;
-   background-color: grey;
-   width: 10rem;
-   height: 2.5rem;
-   cursor: pointer;
-   margin: 2rem 0;
+.btn {
+    color: #ddd;
+    background-color: grey;
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin: 2rem 0;
 }
 
-.characterSheet{
+.characterSheet {
     border: 1px solid white;
     width: 40%;
+    padding: 1rem;
 }
 
-.stat{
+.stat {
     border-top: 1px solid white;
     border-bottom: 1px solid wheat;
     padding: 1rem;
 }
 
-.attributes{
+.attributes, .gear, .consumables {
+    padding: 1rem;
     border-bottom: 1px solid white;
-    padding: 2rem 1rem;
 }
 
-.gear{
-    padding: 2rem 1rem;
-}
-
-.consumables{
-    padding: 2rem 1rem;
-}
-
-.story{
-    border: 1px solid white;
-    display: flex;
-}
-
-.story div h2{
-    color: whitesmoke;
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.story div p{
-    margin: 1.5rem 4rem;
-}
-
-.lehetoseg form{
-    padding: 2rem 4rem;
-}
-
-.lehetoseg form label:hover{
-    color: goldenrod;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-/* Ha a radio input be van jelölve, színezd át a hozzá tartozó label-t */
-.lehetoseg form input[type="radio"]:checked + label {
-    color: blueviolet;
-}
-
-.lehetoseg form input[type="radio"] {
-    display: none;
-}
-
-
-/* Csúszka alapbeállítások */
 input[type="range"] {
     -webkit-appearance: none;
     width: 100%;
@@ -123,51 +92,38 @@ input[type="range"] {
     background: #ddd;
     border-radius: 5px;
     outline: none;
-    margin: 10px 0;
-    pointer-events: none; /* Interakció tiltása */
 }
 
-/* HP csúszka színezés */
 input#hp {
     background: linear-gradient(to right, red 0%, red 70%, #ddd 70%, #ddd 100%);
 }
 
-/* Mana csúszka színezés */
 input#mana {
     background: linear-gradient(to right, blue 0%, blue 40%, #ddd 40%, #ddd 100%);
 }
 
-/* Thumb eltüntetése */
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
-    background: transparent;
-    cursor: default;
+.narracio {
+    background-color: #111;
+    color: #eee;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(218,165,32,0.3);
 }
 
-input[type="range"]::-moz-range-thumb {
-    width: 0;
-    height: 0;
-    background: transparent;
-    cursor: default;
-}
 
-input[type="range"]::-ms-thumb {
-    width: 0;
-    height: 0;
-    background: transparent;
-    cursor: default;
-}
-
-.poti{
-    cursor: pointer;
-}
-
-.hp-poti:hover{
-    color: red;
-}
-
-.mana-poti:hover{
-    color: blue;
-}
+html {
+    position: absolute;
+    display: flex;
+      width: 75%;
+    min-height: calc((1vw + 1vh) * 75);
+    /* center page with absolute position */
+    top: 0%; left: 50%; transform: translate(-50%, 0);
+    margin: 2em 0;
+      padding: 4em;
+      box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+      background: #fffef0;
+      color: black;
+    filter: url(#wavy2);
+  }
